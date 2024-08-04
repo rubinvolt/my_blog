@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block content %}
+<!-- Schleife durch alle Blogeinträge und zeigt jeden Eintrag an -->
+{% for entry in entries %}
+<article>
+    <!-- Titel des Blogeintrags -->
+    <h2>{{ entry.title }}</h2>
+    <!-- Inhalt des Blogeintrags -->
+    <p>{{ entry.content }}</p>
+</article>
+{% endfor %}
+{% endblock %}

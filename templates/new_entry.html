@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block content %}
+<!-- Formular zum Erstellen eines neuen Blogeintrags -->
+<h2>Neuer Blogeintrag</h2>
+<form method="post">
+    <!-- Eingabefeld für den Titel des Blogeintrags -->
+    <label for="title">Titel:</label><br>
+    <input type="text" id="title" name="title"><br>
+    <!-- Eingabefeld für den Inhalt des Blogeintrags -->
+    <label for="content">Inhalt:</label><br>
+    <textarea id="content" name="content" rows="4" cols="50"></textarea><br>
+    <!-- Absenden des Formulars -->
+    <input type="submit" value="Eintrag erstellen">
+</form>
+{% endblock %}

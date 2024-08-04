@@ -1,0 +1,58 @@
+/* Grundlegendes Styling für die gesamte Seite */
+body {
+    font-family: Arial, sans-serif; /* Schriftart für die gesamte Seite */
+    margin: 0; /* Entfernt den Standardrand */
+    padding: 0; /* Entfernt die Standardauffüllung */
+}
+
+/* Styling für den Header */
+header {
+    background-color: #333; /* Hintergrundfarbe des Headers */
+    color: white; /* Schriftfarbe des Headers */
+    padding: 10px 0; /* Auffüllung oben und unten im Header */
+}
+
+header h1 {
+    text-align: center; /* Zentriert die Hauptüberschrift */
+}
+
+/* Navigation */
+nav ul {
+    list-style: none; /* Entfernt Aufzählungszeichen */
+    padding: 0; /* Entfernt Auffüllung */
+    text-align: center; /* Zentriert die Navigation */
+}
+
+nav ul li {
+    display: inline; /* Zeigt Listenpunkte in einer Reihe an */
+    margin: 0 10px; /* Abstand zwischen den Listenpunkten */
+}
+
+nav ul li a {
+    color: white; /* Schriftfarbe der Links */
+    text-decoration: none; /* Entfernt Unterstreichung der Links */
+}
+
+/* Hauptinhalt */
+main {
+    padding: 20px; /* Auffüllung um den Hauptinhalt herum */
+}
+
+/* Styling für Artikel */
+article {
+    background-color: #f4f4f4; /* Hintergrundfarbe der Artikel */
+    padding: 20px; /* Auffüllung in den Artikeln */
+    border-radius: 8px; /* Abgerundete Ecken für die Artikel */
+    margin-bottom: 20px; /* Abstand zwischen den Artikeln */
+}
+
+/* Footer */
+footer {
+    background-color: #333; /* Hintergrundfarbe des Footers */
+    color: white; /* Schriftfarbe des Footers */
+    text-align: center; /* Zentriert den Text im Footer */
+    padding: 10px 0; /* Auffüllung oben und unten im Footer */
+    position: fixed; /* Fixiert den Footer am unteren Rand des Fensters */
+    width: 100%; /* Macht den Footer so breit wie das Fenster */
+    bottom: 0; /* Positioniert den Footer am unteren Rand des Fensters */
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <!-- Metadaten für die Webseite -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Titel der Seite, dynamisch eingefügt -->
+    <title>{{ title }}</title>
+    <!-- Verlinkung der CSS-Datei -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header>
+        <!-- Hauptüberschrift der Webseite -->
+        <h1>Willkommen zu meinem Blog</h1>
+        <!-- Navigationsmenü -->
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('index') }}">Startseite</a></li>
+                <li><a href="{{ url_for('about') }}">Über mich</a></li>
+                <li><a href="{{ url_for('contact') }}">Kontakt</a></li>
+                <li><a href="{{ url_for('new_entry') }}">Neuer Eintrag</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Platzhalter für den spezifischen Inhalt der einzelnen Seiten -->
+        {% block content %}{% endblock %}
+    </main>
+    <footer>
+        <!-- Fußzeile der Webseite -->
+        <p>&copy; 2024 Mein Blog</p>
+    </footer>
+</body>
+</html>
